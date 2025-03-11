@@ -9,3 +9,5 @@ Consigli:
 Ricordiamo che Bootstrap ha già molti componenti pronti all’uso che potete utilizzare direttamente come sono (as-is) o con qualche personalizzazione (customized). Alcuni li abbiamo già usati, altri li trovate come sempre nella documentazione ufficiale del framework. Ogni volta che volete usare un componente di Bootstrap fate sempre una prova su un altro file, copiate il codice di esempio dalla documentazione, osservate il comportamento, e solo quando siete sicuri che tutto funzioni come volete, integratelo nel vostro layout. Così facendo il codice CSS custom che scriverete risulterà abbastanza ridotto.
 Numero minimo di push: 8
 Buon lavoro!
+
+DONE
