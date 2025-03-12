@@ -1,254 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="logo" src="./img/duck.png" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars text-secondary border border-secondary-subtle px-3 py-2 rounded "></i>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Catalogo libri</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Anagrafica Utenti</a>
-                  </li><li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Storico Prestiti</a>
-                  </li>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-secondary" aria-disabled="true">Help</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Cerca</button>
-                </form>
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src="./img/duck.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-secondary border border-secondary-subtle px-3 py-2 rounded "></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Catalogo libri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Anagrafica Utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Storico Prestiti</a>
+            </li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-secondary" aria-disabled="true">Help</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <!-- titolo tabella -->
+          <div class="d-flex align-items-center justify-content-between mt-4 mb-4">
+            <h3>Catalogo Libri</h3>
+            <a href="./bonus/bonus.html">
+              <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+            </a>
+          </div>
+          <!-- tabella -->
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Titolo</th>
+                <th class="d-none d-md-table-cell" scope="col">Data Prestito</th>
+                <th scope="col">Stato</th>
+                <th scope="col">Azioni</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>I Pilastri Della Terra</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <td><span class="badge text-bg-success">Disponibile</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>I Promessi Sposi</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <td><span class="badge text-bg-success">Disponibile</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Il Signore Degli Anelli</td>
+                <td class="d-none d-md-table-cell">18/10/2023</td>
+                <td><span class="badge text-bg-warning text-light">In prestito</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Harry Potter e la pietra filosofale</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <td><span class="badge text-bg-success">Disponibile</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Il Codice Da Vinci</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <td><span class="badge text-bg-danger">Non Disponibile</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Shining</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <td><span class="badge text-bg-success">Disponibile</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>La Divina Commedia</td>
+                <td class="d-none d-md-table-cell">21/09/2023</td>
+                <td><span class="badge text-bg-warning text-light">In prestito</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Il Trono Di Spade</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <td><span class="badge text-bg-success">Disponibile</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Il Mondo Di Sofia</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <td><span class="badge text-bg-danger">Non Disponibile</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Le Cronache Di Narnia: il leone, la strega e l`armadio</td>
+                <td class="d-none d-md-table-cell">25/07/2023</td>
+                <td><span class="badge text-bg-warning text-light">In prestito</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Il Piccolo Principe</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <td><span class="badge text-bg-success">Disponibile</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>La Storia Infinita</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <td><span class="badge text-bg-success">Disponibile</span></td>
+                <td class="text-secondary d-flex">
+                  <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i
+                    class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-12 col-lg-3 mt-4">
+          <div class="row">
+            <div class="col-12">
+              <!-- prima card -->
+              <div class="card" style="">
+                <div class="card-header">
+                  <h4>Todo</h4>
+                </div>
+                <div class="p-3">
+                  <ul class="list-group list-group-flush border border-secondary-subtle rounded">
+                    <li class="list-group-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Chiamare Segreteria
+                        </label>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Mandare avvisi prestiti scaduti
+                        </label>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Ordinare nuovi libri
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-9">
-                    <!-- titolo tabella -->
-                    <div class="d-flex align-items-center justify-content-between mt-4 mb-4">
-                        <h3>Catalogo Libri</h3>
-                        <button type="button" class="btn btn-primary">Aggiungi Libro</button>
-                    </div>
-                    <!-- tabella -->
-                    <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th scope="col">Titolo</th>
-                            <th class="d-none d-md-table-cell" scope="col">Data Prestito</th>
-                            <th scope="col">Stato</th>
-                            <th scope="col">Azioni</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>I Pilastri Della Terra</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-success">Disponibile</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>I Promessi Sposi</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-success">Disponibile</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Il Signore Degli Anelli</td>
-                            <td class="d-none d-md-table-cell">18/10/2023</td>
-                            <td><span class="badge text-bg-warning text-light">In prestito</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Harry Potter e la pietra filosofale</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-success">Disponibile</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Il Codice Da Vinci</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-danger">Non Disponibile</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Shining</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-success">Disponibile</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>La Divina Commedia</td>
-                            <td class="d-none d-md-table-cell">21/09/2023</td>
-                            <td><span class="badge text-bg-warning text-light">In prestito</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Il Trono Di Spade</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-success">Disponibile</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Il Mondo Di Sofia</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-danger">Non Disponibile</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Le Cronache Di Narnia: il leone, la strega e l`armadio</td>
-                            <td class="d-none d-md-table-cell">25/07/2023</td>
-                            <td><span class="badge text-bg-warning text-light">In prestito</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Il Piccolo Principe</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-success">Disponibile</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>La Storia Infinita</td>
-                            <td class="d-none d-md-table-cell">-</td>
-                            <td><span class="badge text-bg-success">Disponibile</span></td>
-                            <td class="text-secondary d-flex">
-                                <i class="fa-solid fa-pen border border-secondary-subtle px-2 py-2 rounded"></i><i class="ms-1 fa-solid fa-trash border border-secondary-subtle px-2 py-2 rounded"></i>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+            <div class="col-12">
+              <!-- seconda card -->
+              <div class="card mt-4" style="">
+                <div class="card-header">
+                  <h4>F.A.Q.</h4>
                 </div>
-                <div class="col-12 col-lg-3 mt-4">
-                    <div class="row">
-                        <div class="col-12">
-                            <!-- prima card -->
-                            <div class="card" style="">
-                                <div class="card-header">
-                                    <h4>Todo</h4>
-                                </div>
-                                <div class="p-3">
-                                    <ul class="list-group list-group-flush border border-secondary-subtle rounded">
-                                        <li class="list-group-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Chiamare Segreteria
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Mandare avvisi prestiti scaduti
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Ordinare nuovi libri
-                                                </label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <!-- seconda card -->
-                            <div class="card mt-4" style="">
-                                <div class="card-header">
-                                  <h4>F.A.Q.</h4>
-                                </div>
-                                <div class="accordion accordion-flush p-3" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                          Come aggiungere un nuovo libro?
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Con le mani.</div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                          Come posso accedere all`anagrafica utenti?
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Con il mouse.</div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                          Posso usare questa dashboard da mobile?
-                                        </button>
-                                      </h2>
-                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Eh per forza sennò non studiavo la responsività.</div>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="accordion accordion-flush p-3" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Come aggiungere un nuovo libro?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Con le mani.</div>
                     </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Come posso accedere all`anagrafica utenti?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Con il mouse.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Posso usare questa dashboard da mobile?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Eh per forza sennò non studiavo la responsività.</div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </main>
-    <!-- link bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </div>
+    </div>
+  </main>
+  <!-- link bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
