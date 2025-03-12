@@ -58,12 +58,8 @@
     </header>
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col12">
-                    <!-- titolo pagina -->
-                    <h3 class="mt-3">Nuovo Libro</h3>
-                </div>
-            </div>
+            <!-- titolo pagina -->
+            <h3 class="my-4">Nuovo Libro</h3>
             <form>
                 <div class="row">
                     <!-- nome autore -->
@@ -98,14 +94,47 @@
                     <!-- genere -->
                     <div class="col-12 col-lg-4">
                         <label for="exampleInputGender1" class="form-label">Genere</label>
-                        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                        <select class="form-select form-select-md mb-3" aria-label="Large select example">
                             <option selected>Scegli il genere</option>
                             <option value="1">Giallo</option>
                             <option value="2">Romantico</option>
                             <option value="3">Horror</option>
                         </select>
                     </div>
+                    <!-- anno pubblicazione -->
+                    <div class="col-12 col-lg-4">
+                        <label for="exampleInputYear1" class="form-label">Anno di pubblicazione</label>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="exampleInputYear1"
+                                placeholder="Inserisci l`anno">
+                        </div>
+                    </div>
+                    <!-- ISBN -->
+                    <div class="col-12 col-lg-4">
+                        <label for="exampleInpuISBN1" class="form-label">ISBN#</label>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="exampleInputISBN1"
+                                placeholder="Inssrisci il codice ISBN#">
+                        </div>
+                    </div>
                 </div>
+                <hr class="my-4">
+                <!-- note -->
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <!-- disponibile in digitale -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Disponibile anche in digitale
+                    </label>
+                </div>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary my-4" type="button">Aggiungi libro</button>
+                  </div>
             </form>
         </div>
     </main>
